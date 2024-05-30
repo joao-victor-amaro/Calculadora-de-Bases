@@ -14,7 +14,7 @@ internal class Program
 
     }
 
-    /*static void Opcao1()
+    static void Opcao1()
     {
 
 
@@ -24,7 +24,7 @@ internal class Program
         Console.WriteLine("Digite um número decimal para ser convertido para binário: ");
         int numero;
         bool validacaoDoDigito = int.TryParse(Console.ReadLine(), out numero);
-        
+
 
         if (validacaoDoDigito == false)
         {
@@ -68,7 +68,7 @@ internal class Program
         Console.ReadKey();
         Console.Clear();
         Menu();
-    }*/
+    }
 
     static void Opcao2()
     {
@@ -119,54 +119,54 @@ internal class Program
         Menu();
     }
 
-    /* static void Opcao3()
-     {
-         List<int> resultado = [];
-         int resto, quociente;
-         Console.WriteLine("Decimal --> Octal");
-         Console.WriteLine("Digite um número decimal para ser convertido para octal: ");
-         int numero;
-         bool validacaoDoDigito = int.TryParse(Console.ReadLine(), out numero);
+    static void Opcao3()
+    {
+        List<int> resultado = [];
+        int resto, quociente;
+        Console.WriteLine("Decimal --> Octal");
+        Console.WriteLine("Digite um número decimal para ser convertido para octal: ");
+        int numero;
+        bool validacaoDoDigito = int.TryParse(Console.ReadLine(), out numero);
 
 
-         if (validacaoDoDigito == false)
-         {
-             Console.WriteLine("Digito inválido. Por favor, insira um numero decimal válido.");
-             Console.WriteLine("Aperte enter para voltar para inserir outro numero! ");
-             Console.ReadKey();
-             Console.Clear();
-             Opcao3();
-         }
-         Console.WriteLine("|------------------------------------------------------------------|");
-         quociente = numero / 8;
-         resto = numero % 8;
+        if (validacaoDoDigito == false)
+        {
+            Console.WriteLine("Digito inválido. Por favor, insira um numero decimal válido.");
+            Console.WriteLine("Aperte enter para voltar para inserir outro numero! ");
+            Console.ReadKey();
+            Console.Clear();
+            Opcao3();
+        }
+        Console.WriteLine("|------------------------------------------------------------------|");
+        quociente = numero / 8;
+        resto = numero % 8;
 
-         resultado.Add(resto);
+        resultado.Add(resto);
 
-         Console.WriteLine($"Primeiro passo: {numero} / 8 -> Quociente: {quociente}, Resto: {resto}");
+        Console.WriteLine($"Primeiro passo: {numero} / 8 -> Quociente: {quociente}, Resto: {resto}");
 
-         do
-         {
-             int passos = quociente;
-             resto = quociente % 8;
-             quociente /= 8;
-             resultado.Add(resto);
+        do
+        {
+            int passos = quociente;
+            resto = quociente % 8;
+            quociente /= 8;
+            resultado.Add(resto);
 
-             Console.WriteLine($"Próximo passo: {passos} / 8 -> Quociente: {quociente}, Resto: {resto}");
-         } while (quociente >= 1);
+            Console.WriteLine($"Próximo passo: {passos} / 8 -> Quociente: {quociente}, Resto: {resto}");
+        } while (quociente >= 1);
 
-         resultado.Reverse();
+        resultado.Reverse();
 
-         foreach (int i in resultado)
-         {
-             Console.Write(i);
-         }
-         Console.WriteLine("\n");
-         Console.WriteLine("Aperte enter para voltar pro Menu! ");
-         Console.ReadKey();
-         Console.Clear();
-         Menu();
-     }*/
+        foreach (int i in resultado)
+        {
+            Console.Write(i);
+        }
+        Console.WriteLine("\n");
+        Console.WriteLine("Aperte enter para voltar pro Menu! ");
+        Console.ReadKey();
+        Console.Clear();
+        Menu();
+    }
 
     static void Opcao4()
     {
@@ -986,7 +986,7 @@ internal class Program
 
                 case 1:
 
-                    //Opcao1();
+                    Opcao1();
                     break;
 
                 case 2:
@@ -995,7 +995,7 @@ internal class Program
                     break;
 
                 case 3:
-                    //Opcao3();
+                    Opcao3();
                     break;
 
                 case 4:
@@ -1089,6 +1089,12 @@ internal class Program
         } while (escolha != 0);
     }
 }
+
+
+
+
+
+
 
 
 
